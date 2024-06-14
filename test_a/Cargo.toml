@@ -1,0 +1,9 @@
+[package]
+name = "test_a"
+version = "0.1.0"
+edition = "2021"
+
+publish.workspace = true
+
+[dependencies]
+test_c = { version = "0.1.0", path = "../test_c", registry = "custom-artifactory" }

@@ -1,0 +1,12 @@
+[registry]
+default = "custom-artifactory"
+
+[registries.custom-artifactory]
+index = "sparse+https://example.com/artifactory/api/cargo/cargo/index/"
+
+[env]
+# The probe-lib tests which interact with hardware cannot be run in parallel
+RUST_TEST_THREADS = "1"
+
+[alias]
+xtask = "run --package xtask --"

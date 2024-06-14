@@ -1,0 +1,6 @@
+[workspace]
+resolver = "2"
+members = ["test_a", "test_c"]
+
+[workspace.package]
+publish = ["custom-artifactory"]
